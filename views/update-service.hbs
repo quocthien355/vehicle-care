@@ -1,0 +1,75 @@
+{{> "menu"}}
+{{> "header"}}
+
+    <!-- >>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
+                    <h3 class="content-header-title mb-0 d-inline-block">Update Service</h3>
+                    <div class="row breadcrumbs-top d-inline-block">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.php">Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item active">Update Service
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-flex justify-content-center">
+
+                <!-- Form controls -->
+
+                <div class="col-md-6">
+                    <div class="card mb-4">
+
+                        <div class="card-body">
+                            <form class="mb-3" action="/product/addProduct" method="POST" enctype="multipart/form-data">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                    <input name="name" type="text" class="form-control" id="name"
+                                        value="Engine checks" required="" onchange="validation();" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Type of service</label>
+                                    <input name="type-of-service" type="text" class="form-control" id="type-of-service" value="at the store"
+                                        onchange="validation();" />
+                                </div>
+                               
+ <div>
+                                    <label for="exampleFormControlTextarea1" class="form-label">Recognition</label>
+                                    <input name="Recognition" type="number" class="form-control" id="Recognition" value="19000000"
+                                        onchange="validation();" />
+                                </div>
+                              
+             
+                                <div>
+                                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                                    <textarea name="desciption" class="form-control" id="desciption"
+                                        onchange="validation();" rows="3">Oil change – the grade used will depend on the manufacturer’s recommendation
+New oil filter
+New air filter
+New spark plugs
+Test/replace/top-up coolant as required.</textarea>
+                                </div>
+                                <div class="mb-4"></div>
+                                <button class="btn btn-primary d-grid w-100" va type="submit" disabled>Update
+                                    service</button>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+    {{> "footer"}}

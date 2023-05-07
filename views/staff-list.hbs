@@ -1,0 +1,366 @@
+
+{{> "header"}}
+{{> "menu"}}
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
+                    <h3 class="content-header-title mb-0 d-inline-block">Staff list</h3>
+                    <div class="row breadcrumbs-top d-inline-block">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item active">Staff list
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="content-detached content-body">
+                <div class="content-body">
+                    <div id="wallet">
+                        <div class="wallet-table-th d-none d-md-block">
+                            <div class="row">
+                                <div class="col-md-2 col-12 py-1 text-center">
+                                    <p class="mt-0 text-capitalize text-bold-700 text-info">Name</p>
+                                </div>
+                                 <div class="col-md-1 col-12 py-1 text-center">
+                                    <p class="mt-0 text-capitalize text-bold-700 text-info">Gender</p>
+                                </div>
+                                <div class="col-md-2 col-12 py-1 text-center">
+                                    <p class="mt-0 text-capitalize text-bold-700 text-info">Position</p>
+                                </div>
+                                <div class="col-md-2 col-12 py-1 text-center">
+                                    <p class="mt-0 text-capitalize text-bold-700 text-info">Phone number</p>
+                                </div>
+                                <div class="col-md-3 col-12 py-1 text-center">
+                                    <p class="mt-0 text-capitalize text-bold-700 text-info">Branch work</p>
+                                </div>
+                                <div class="col-md-2 col-12 py-1 text-center">
+                                    <p class="mt-0 text-capitalize text-bold-700 text-info">Action</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BTC -->
+                        <section class="card pull-up">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="col-12">
+                                        <div class="row">
+                                           
+                                          <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Phan Tuấn Anh
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-1 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Male
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-danger">Manager
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">0123456788
+
+                                                </h6>
+                                                
+                                            </div>
+                                         
+                                                <div class="col-md-3 col-12 py-1 text-sm-center mt-2">
+                                                <a href="#" class=" overflow-hidden "   class="line-height-1 ">chi nhánh 3: 200 Trịnh Thị Miếng Tổ 111 ấp Đông, Thới Tam Thôn, Hóc Môn, Thành phố Hồ Chí Minh, Việt Nam
+.</a>
+                                            </div>
+                                          
+                                            <div class="col-md-2 col-12 py-3 text-center">
+                                                <a class="dropdown-item" href="/staffs/update/{{this.id}}"><i
+                                                        class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                <a class="dropdown-item text-danger"
+                                                    onclick="conformDelete('{{this._id}}');"><i
+                                                        class="bx bx-trash me-1"></i> Delete</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--/ BTC -->
+                           <!-- BTC -->
+                        <section class="card pull-up">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="col-12">
+                                        <div class="row">
+                                           
+                                          <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Phan Tuấn Anh
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-1 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Male
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-danger">Manager
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">0123456788
+
+                                                </h6>
+                                                
+                                            </div>
+                                         
+                                                <div class="col-md-3 col-12 py-1 text-sm-center mt-2">
+                                                <a href="#" class=" overflow-hidden "   class="line-height-1 ">chi nhánh 3: 200 Trịnh Thị Miếng Tổ 111 ấp Đông, Thới Tam Thôn, Hóc Môn, Thành phố Hồ Chí Minh, Việt Nam
+.</a>
+                                            </div>
+                                          
+                                            <div class="col-md-2 col-12 py-3 text-center">
+                                                <a class="dropdown-item" href="/staffs/update/{{this.id}}"><i
+                                                        class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                <a class="dropdown-item text-danger"
+                                                    onclick="conformDelete('{{this._id}}');"><i
+                                                        class="bx bx-trash me-1"></i> Delete</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--/ BTC -->
+                            <!-- BTC -->
+                        <section class="card pull-up">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="col-12">
+                                        <div class="row">
+                                           
+                                          <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Phan Tuấn Anh
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-1 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Male
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-danger">Manager
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">0123456788
+
+                                                </h6>
+                                                
+                                            </div>
+                                         
+                                                <div class="col-md-3 col-12 py-1 text-sm-center mt-2">
+                                                <a href="#" class=" overflow-hidden "   class="line-height-1 ">chi nhánh 3: 200 Trịnh Thị Miếng Tổ 111 ấp Đông, Thới Tam Thôn, Hóc Môn, Thành phố Hồ Chí Minh, Việt Nam
+.</a>
+                                            </div>
+                                          
+                                            <div class="col-md-2 col-12 py-3 text-center">
+                                                <a class="dropdown-item" href="/staffs/update/{{this.id}}"><i
+                                                        class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                <a class="dropdown-item text-danger"
+                                                    onclick="conformDelete('{{this._id}}');"><i
+                                                        class="bx bx-trash me-1"></i> Delete</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--/ BTC -->
+                            <!-- BTC -->
+                        <section class="card pull-up">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="col-12">
+                                        <div class="row">
+                                           
+                                          <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Phan Tuấn Anh
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-1 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Male
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-danger">Manager
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">0123456788
+
+                                                </h6>
+                                                
+                                            </div>
+                                         
+                                                <div class="col-md-3 col-12 py-1 text-sm-center mt-2">
+                                                <a href="#" class=" overflow-hidden "   class="line-height-1 ">chi nhánh 3: 200 Trịnh Thị Miếng Tổ 111 ấp Đông, Thới Tam Thôn, Hóc Môn, Thành phố Hồ Chí Minh, Việt Nam
+.</a>
+                                            </div>
+                                          
+                                            <div class="col-md-2 col-12 py-3 text-center">
+                                                <a class="dropdown-item" href="/staffs/update/{{this.id}}"><i
+                                                        class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                <a class="dropdown-item text-danger"
+                                                    onclick="conformDelete('{{this._id}}');"><i
+                                                        class="bx bx-trash me-1"></i> Delete</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--/ BTC -->
+                            <!-- BTC -->
+                        <section class="card pull-up">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="col-12">
+                                        <div class="row">
+                                           
+                                          <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Phan Tuấn Anh
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-1 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Male
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-danger">Manager
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">0123456788
+
+                                                </h6>
+                                                
+                                            </div>
+                                         
+                                                <div class="col-md-3 col-12 py-1 text-sm-center mt-2">
+                                                <a href="#" class=" overflow-hidden "   class="line-height-1 ">chi nhánh 3: 200 Trịnh Thị Miếng Tổ 111 ấp Đông, Thới Tam Thôn, Hóc Môn, Thành phố Hồ Chí Minh, Việt Nam
+.</a>
+                                            </div>
+                                          
+                                            <div class="col-md-2 col-12 py-3 text-center">
+                                                <a class="dropdown-item" href="/staffs/update/{{this.id}}"><i
+                                                        class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                <a class="dropdown-item text-danger"
+                                                    onclick="conformDelete('{{this._id}}');"><i
+                                                        class="bx bx-trash me-1"></i> Delete</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--/ BTC -->
+                            <!-- BTC -->
+                        <section class="card pull-up">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="col-12">
+                                        <div class="row">
+                                           
+                                          <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Phan Tuấn Anh
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-1 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">Male
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-danger">Manager
+
+                                                </h6>
+                                                
+                                            </div>
+                                            <div class="col-md-2 col-12 py-1 text-center">
+                                                <h6 class="mt-2 text-center text-bold-700">0123456788
+
+                                                </h6>
+                                                
+                                            </div>
+                                         
+                                                <div class="col-md-3 col-12 py-1 text-sm-center mt-2">
+                                                <a href="#" class=" overflow-hidden "   class="line-height-1 ">chi nhánh 3: 200 Trịnh Thị Miếng Tổ 111 ấp Đông, Thới Tam Thôn, Hóc Môn, Thành phố Hồ Chí Minh, Việt Nam
+.</a>
+                                            </div>
+                                          
+                                            <div class="col-md-2 col-12 py-3 text-center">
+                                                <a class="dropdown-item" href="/staffs/update/{{this.id}}"><i
+                                                        class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                <a class="dropdown-item text-danger"
+                                                    onclick="conformDelete('{{this._id}}');"><i
+                                                        class="bx bx-trash me-1"></i> Delete</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--/ BTC -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {{> "footer"}}
