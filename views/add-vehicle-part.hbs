@@ -1,0 +1,73 @@
+
+{{> "header"}}
+{{> "menu"}} 
+<!-- >>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
+                    <h3 class="content-header-title mb-0 d-inline-block">Add Vehicle part</h3>
+                    <div class="row breadcrumbs-top d-inline-block">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item active">Add Vehicle part
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-flex justify-content-center">
+
+                <!-- Form controls -->
+
+                <div class="col-md-6">
+                    <div class="card mb-4">
+
+                        <div class="card-body">
+                            <form class="mb-3" action="/product/addProduct" method="POST" enctype="multipart/form-data">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                    <input name="name" type="text" class="form-control" id="name"
+                                        placeholder="Má Phanh" required="" onchange="validation();" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Price (VND)</label>
+                                    <input name="price" type="number" class="form-control" id="price" placeholder="100"
+                                        onchange="validation();" />
+                                </div>
+                              
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Image product</label>
+                                    <input name="image" class="form-control" type="file" id="image"
+                                        onchange="onchangeImage(event);" /><br />
+                                    <img width="150" height="100" id="img-display" alt="Image"
+                                        src="{{product.image}}" />
+                                </div>
+
+
+                                <div>
+                                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                                    <textarea name="desciption" class="form-control" id="desciption"
+                                        onchange="validation();" rows="3"></textarea>
+                                </div>
+                                <div class="mb-4"></div>
+                                <button class="btn btn-primary d-grid w-100" va type="submit" disabled>Add 
+                                    vehicle part</button>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+{{> "footer"}}
